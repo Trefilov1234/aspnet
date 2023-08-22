@@ -1,0 +1,13 @@
+﻿@page
+@model first.Pages.Fourth_taskModel
+@{
+}
+<div class="h4">Список ресторанов</div>
+<ul class="list-styled">
+    
+    @foreach(var rest in Model.Rests)
+    {
+        <li>@rest</li>
+    }
+    
+</ul>
