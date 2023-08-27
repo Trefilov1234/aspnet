@@ -1,0 +1,24 @@
+﻿@page
+@model lesson_2.Pages.CreateAuthorModel
+@{
+}
+<h1 class="display-4">Создать автора</h1>
+<form method="post">
+    <div class="my-1">
+        <label asp-for="AuthorFirstName"></label>
+        <input class="form-control" asp-for="AuthorFirstName" />
+        <span asp-validation-for="AuthorFirstName"></span>
+    </div>
+
+    <div class="my-1">
+        <label asp-for="AuthorLastName"></label>
+        <input class="form-control" asp-for="AuthorLastName" />
+        <span asp-validation-for="AuthorLastName"></span>
+    </div>
+
+    <div class="my-1">
+        <label asp-for="AuthorBirthday"></label>
+        <input class="form-control" asp-for="AuthorBirthday" />
+    </div>
+    <button class="btn  btn-primary my-1" type="submit">Создать</button>
+</form>
